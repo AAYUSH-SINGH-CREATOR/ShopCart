@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom"
 import { FaShoppingCart } from "react-icons/fa";
+import logo from "../assets/logo.png";
 
 
 export default function Navbar(){
@@ -9,7 +10,7 @@ export default function Navbar(){
             <div className=" w-[64%] flex justify-between items-center">
                 <div>
                     <NavLink to="/">
-                        <img src="src/assets/logo.png" alt="hero img" className="w-40"/>
+                        <img src={logo} className="w-40"/>
                     </NavLink>
                 </div>
                 
