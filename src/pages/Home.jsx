@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Product from "../components/Product";
 import Spinner from "../components/Spinner";
+import Footer from "../components/Footer";
 
 const API_URL = import.meta.env.VITE_API_URL;
 
@@ -39,6 +40,7 @@ export default function Home() {
                 </div>
                 ) : <p>Post not found</p>
             }
+         
         </div >
     )
 }
