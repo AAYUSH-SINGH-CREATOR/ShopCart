@@ -5,6 +5,6 @@ import CartSlice from "./redux/slice/CartSlice";
 
  export const store = configureStore({
     reducer:{
-        Cart:CartSlice,
+        cart:CartSlice,
     }
 })

@@ -26,12 +26,14 @@ export default function Home() {
     }, []);
 
     return (
-        <div>
+
+        <div className="w-full flex justify-center">
+        <div className="w-[80%] min-h-[100vh] flex items-center justify-center">
             {
                 loading ? <Spinner/>
                 : posts.length > 0
                  ? (              
-                 <div> 
+                 <div className="w-[100%] flex flex-wrap justify-center gap-5  m-4 mt-12"> 
                     {
                         posts.map((post)=>(
                           <Product key={post.id} post = {post} />
@@ -42,5 +44,6 @@ export default function Home() {
             }
          
         </div >
+        </div>
     )
 }
